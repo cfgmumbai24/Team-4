@@ -5,7 +5,7 @@ const User = require('../models/user.model');
 
 
 router.post('/signup', async (req, res) => {
-    const { fullName, age, gender, phone_no, city, hobbies, income } = req.body;
+    const { fullName, age, gender, phone_no, city, hobby1, hobby2, income } = req.body;
   
     try {
       const userExists = await User.findOne({ phone_no });
@@ -14,7 +14,7 @@ router.post('/signup', async (req, res) => {
         return res.status(400).json({ message: 'User already exists' });
       }
   
-      const user = await User.create({ fullName, age, gender, phone_no, city, hobbies, income  });
+      const user = await User.create({ fullName, age, gender, phone_no, city, hobby1, hobby2, income  });
   
       res.status(201).json({ message: 'User registered successfully', success: true });
     } catch (error) {
@@ -25,12 +25,12 @@ router.post('/signup', async (req, res) => {
   
 
 router.post('/login', async (req, res) => {
-    const { phone_no } = req.body;
+    const { fullName } = req.body;
 
     try {
-        const user = await User.findOne({ phone_no });
+        const user = await User.findOne({ fullName });
 
-        if (!user || user.phone_no !== phone_no) {
+        if (!user ) {
             return res.status(400).json({ message: 'Invalid credentials' });
         }
 
@@ -51,8 +51,8 @@ router.get('/user/:user_id', async (req, res) => {
 
         if (user) {
             // If user is found, send user information in response
-            const { fullName, age, gender, phone_no, city, hobbies, income } = user;
-            res.json({ fullName, age, gender, phone_no, city, hobbies, income });
+            const { fullName, age, gender, phone_no, city, hobby1, hobby2, income } = user;
+            res.json({ fullName, age, gender, phone_no, city, hobby1, hobby2, income });
         } else {
             // If user is not found, send a 404 error
             res.status(404).json({ message: 'User not found' });
