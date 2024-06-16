@@ -97,7 +97,7 @@ export const Courses = () => {
             <span>10 videos</span>
           </div>
           <h3 className="title">Fashion</h3>
-          <a href="playlist.html" className="inline-btn">
+          <a href="Playlist" className="inline-btn">
             view playlist
           </a>
         </div>
@@ -114,7 +114,7 @@ export const Courses = () => {
             <span>10 videos</span>
           </div>
           <h3 className="title">Medical</h3>
-          <a href="playlist.html" className="inline-btn">
+          <a href="Playlist" className="inline-btn">
             view playlist
           </a>
         </div>
@@ -131,7 +131,7 @@ export const Courses = () => {
             <span>10 videos</span>
           </div>
           <h3 className="title">Engineering</h3>
-          <a href="playlist.html" className="inline-btn">
+          <a href="Playlist" className="inline-btn">
             view playlist
           </a>
         </div>
@@ -148,7 +148,7 @@ export const Courses = () => {
             <span>10 videos</span>
           </div>
           <h3 className="title">Tourism</h3>
-          <a href="playlist.html" className="inline-btn">
+          <a href="Playlist" className="inline-btn">
             view playlist
           </a>
         </div>
@@ -165,7 +165,7 @@ export const Courses = () => {
             <span>10 videos</span>
           </div>
           <h3 className="title">Agriculture</h3>
-          <a href="playlist.html" className="inline-btn">
+          <a href="Playlist" className="inline-btn">
             view playlist
           </a>
         </div>

@@ -21,6 +21,8 @@ import { TeachersProfile } from './components/TeachersProfile.js';
 import { SuccessStories } from './components/SuccessStories.js';
 import { Dashboard } from './components/Dashboard.js';
 import { Guidance } from './components/Guidance.js';
+import {Courses} from './components/Courses.js';
+import { Playlist } from './components/Playlist.js';
 
 
 
@@ -43,6 +45,8 @@ ReactDOM.render(
         <Route path="/Teachers" element={<Teachers/>} />
         <Route path="/TeachersProfile" element={<TeachersProfile/>} />
         <Route path="/SuccessStories" element={<SuccessStories/>} />
+        <Route path="/Courses" element={<Courses/>} />
+        <Route path="/Playlist" element={<Playlist/>} />
         
         
         

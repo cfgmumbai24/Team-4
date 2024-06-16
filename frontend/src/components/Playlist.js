@@ -109,9 +109,9 @@ export const Playlist = () => {
               This Playlist consists of all the essentials required for fashion In
               6 tutorials.
             </p>
-            <a href="teacher_profile.html" className="inline-btn">
+            {/* <a href="teacher_profile.html" className="inline-btn">
               view profile
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
@@ -119,32 +119,32 @@ export const Playlist = () => {
     <section className="playlist-videos">
       <h1 className="heading">playlist videos</h1>
       <div className="box-container">
-        <a className="box" href="watch-video.html">
+        <a className="box" href="https://res.cloudinary.com/dcuebvwvx/video/upload/v1718470371/ffosp3bii7onpwcwtg0c.mp4">
           <i className="fas fa-play" />
           <img src="assets/img/fashion.jpg" alt="" />
           <h3>Fashion tutorial (part 01)</h3>
         </a>
-        <a className="box" href="watch-video.html">
+        <a className="box" href="https://res.cloudinary.com/dcuebvwvx/video/upload/v1718470371/ffosp3bii7onpwcwtg0c.mp4">
           <i className="fas fa-play" />
           <img src="assets/img/fashion.jpg" alt="" />
           <h3>Fashion tutorial (part 02)</h3>
         </a>
-        <a className="box" href="watch-video.html">
+        <a className="box" href="https://res.cloudinary.com/dcuebvwvx/video/upload/v1718470371/ffosp3bii7onpwcwtg0c.mp4">
           <i className="fas fa-play" />
           <img src="assets/img/fashion.jpg" alt="" />
           <h3>Fashion tutorial (part 03)</h3>
         </a>
-        <a className="box" href="watch-video.html">
+        <a className="box" href="https://res.cloudinary.com/dcuebvwvx/video/upload/v1718470371/ffosp3bii7onpwcwtg0c.mp4">
           <i className="fas fa-play" />
           <img src="assets/imgfashion.jpg" alt="" />
           <h3>Fashion tutorial (part 04)</h3>
         </a>
-        <a className="box" href="watch-video.html">
+        <a className="box" href="https://res.cloudinary.com/dcuebvwvx/video/upload/v1718470371/ffosp3bii7onpwcwtg0c.mp4">
           <i className="fas fa-play" />
           <img src="assets/img/fashion.jpg" alt="" />
           <h3>Fashion tutorial (part 05)</h3>
         </a>
-        <a className="box" href="watch-video.html">
+        <a className="box" href="https://res.cloudinary.com/dcuebvwvx/video/upload/v1718470371/ffosp3bii7onpwcwtg0c.mp4">
           <i className="fas fa-play" />
           <img src="assets/img/fashion.jpg" alt="" />
           <h3>Fashion tutorial (part 06)</h3>
