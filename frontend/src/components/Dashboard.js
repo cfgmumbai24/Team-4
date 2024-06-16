@@ -109,23 +109,23 @@ export const Dashboard = () => {
       <div className="box">
         <h3 className="title">top categories</h3>
         <div className="flex">
-          <a href="courses.html">
+          <a href="Courses">
             <i className="fas fa-code" />
             <span>Agriculture</span>
           </a>
-          <a href="courses.html">
+          <a href="Courses">
             <i className="fas fa-chart-simple" />
             <span>Medical</span>
           </a>
-          <a href="courses.html">
+          <a href="Courses">
             <i className="fas fa-pen" />
             <span>Engineering</span>
           </a>
-          <a href="courses.html">
+          <a href="Courses">
             <i className="fas fa-chart-line" />
             <span>Tourism</span>
           </a>
-          <a href="courses.html">
+          <a href="Courses">
             <i className="fas fa-cog" />
             <span>Fashion</span>
           </a>

@@ -19,7 +19,7 @@ export const Guidance = () => {
   <style
     dangerouslySetInnerHTML={{
       __html:
-        "\n      .guidance-container {\n        text-align: center;\n        margin: 40px 0;\n      }\n\n      .guidance-btn {\n        display: inline-block;\n        margin: 20px;\n        padding: 15px 30px;\n        background-color: #4caf50;\n        color: white;\n        border: none;\n        cursor: pointer;\n        font-size: 20px; /* Increased font size */\n        border-radius: 5px;\n        transition: background-color 0.3s;\n      }\n\n      .guidance-btn:hover {\n        background-color: #45a049;\n      }\n\n      .guidance-section {\n        display: none;\n        margin: 20px auto;\n        padding: 20px;\n        border: 1px solid #ddd;\n        border-radius: 5px;\n        background-color: #f9f9f9;\n        max-width: 800px;\n        text-align: left;\n        font-size: medium;\n      }\n\n      .guidance-section.active {\n        display: block;\n      }\n\n      .guidance-section h3 {\n        margin-top: 0;\n      }\n\n      .guidance-section ul {\n        padding-left: 20px;\n      }\n\n      .guidance-section ul li {\n        margin-bottom: 10px;\n      }\n      .footer {\n        bottom: 0px;\n        position: fixed;\n      }\n\n      @media (max-width: 600px) {\n        .guidance-btn {\n          font-size: 18px; /* Adjusted font size for smaller screens */\n          padding: 10px 20px;\n        }\n\n        .guidance-section {\n          padding: 15px;\n        }\n      }\n    "
+        "\n      .guidance-container {\n        text-align: center;\n        margin: 40px 0;\n      }\n\n      .guidance-btn {\n              margin: 20px;\n        padding: 15px 30px;\n        background-color: #4caf50;\n        color: white;\n        border: none;\n        cursor: pointer;\n        font-size: 20px; /* Increased font size */\n        border-radius: 5px;\n        transition: background-color 0.3s;\n      }\n\n      .guidance-btn:hover {\n        background-color: #45a049;\n      }\n\n      .guidance-section {\n        display: none;\n        margin: 20px auto;\n        padding: 20px;\n        border: 1px solid #ddd;\n        border-radius: 5px;\n        background-color: #f9f9f9;\n        max-width: 800px;\n        text-align: left;\n        font-size: medium;\n      }\n\n      .guidance-section.active {\n        display: block;\n      }\n\n      .guidance-section h3 {\n        margin-top: 0;\n      }\n\n      .guidance-section ul {\n        padding-left: 20px;\n      }\n\n      .guidance-section ul li {\n        margin-bottom: 10px;\n      }\n      .footer {\n        bottom: 0px;\n        position: fixed;\n      }\n\n      @media (max-width: 600px) {\n        .guidance-btn {\n          font-size: 18px; /* Adjusted font size for smaller screens */\n          padding: 10px 20px;\n        }\n\n        .guidance-section {\n          padding: 15px;\n        }\n      }\n    "
     }}
   />
   <header className="header">
@@ -71,7 +71,7 @@ export const Guidance = () => {
         </Link>
         <Link to="/Guidance">
         <i className="fas fa-chalkboard-user" />
-        <span>Guidance</span>
+        <span>Connect</span>
         </Link>
       
         <Link to="/Courses">
