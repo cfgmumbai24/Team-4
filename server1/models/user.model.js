@@ -6,7 +6,8 @@ const UserSchema = new mongoose.Schema({
     gender: { type: String, required: true },
     phone_no: { type: Number, required: true, unique: true },
     city: { type: String, required: true },
-    hobbies: { type: String, required: true },
+    hobby1: { type: String, required: true },
+    hobby2: { type: String, required: true },
     income: { type: Number, required: true },
     
 
