@@ -1,7 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { FaUserPlus, FaSignInAlt } from 'react-icons/fa';
-
 
 const LandingPage = () => {
     const navigate = useNavigate();
@@ -15,19 +13,29 @@ const LandingPage = () => {
     };
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '100vh', backgroundColor: '#f5f5f5',  backgroundImage: 'url("assets/img/bgland.jpg")' }}>
-            
-            {/* <img src="assets/img/carelogo.png" alt="Care Logo" width="400" height="250" /> */}
-            <h1 style={{ color: '#007bff', marginTop: '320px', marginBottom: '50px' }}>Welcome to Margshala</h1>
-
-            <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', width: '300px', margin: '0 auto' }}>
-                <div className="landing-button" onClick={navigateToSignUp} style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <FaUserPlus style={{ fontSize: '50px', color: '#ff69b4' }} />
-                    <p style={{ marginTop: '10px' }}>Sign Up</p>
+        <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-end',  // Align content to the bottom
+            alignItems: 'flex-start',   // Align items to the left
+            minHeight: '100vh',         // Ensure full viewport height coverage
+            backgroundColor: '#f5f5f5',
+            backgroundImage: 'url("assets/img/busland.jpg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            padding: '20px',            // Add padding to center content and buttons
+            paddingLeft: '20px',        // Additional left padding for aligning buttons to the left
+        }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '600px', width: '100%' }}>
+                {/* Adjusted button styles with smaller size */}
+                <div className="landing-button" onClick={navigateToSignUp} style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', transition: 'transform 0.2s, box-shadow 0.2s', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)', borderRadius: '5px', padding: '15px', backgroundColor: '#ff69b4', marginBottom: '10px', width: '80%' }}>
+                    <i className="fas fa-user-plus" style={{ fontSize: '40px', color: '#fff' }}></i>
+                    <p style={{ marginTop: '10px', color: '#fff', fontWeight: 'bold', fontSize: '16px' }}>Sign Up</p>
                 </div>
-                <div className="landing-button" onClick={navigateToLogin} style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <FaSignInAlt style={{ fontSize: '50px', color: '#007bff' }} />
-                    <p style={{ marginTop: '10px' }}>Login</p>
+                <div className="landing-button" onClick={navigateToLogin} style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'center', transition: 'transform 0.2s, box-shadow 0.2s', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)', borderRadius: '5px', padding: '15px', backgroundColor: '#007bff', width: '80%' }}>
+                    <i className="fas fa-sign-in-alt" style={{ fontSize: '40px', color: '#fff' }}></i>
+                    <p style={{ marginTop: '10px', color: '#fff', fontWeight: 'bold', fontSize: '16px' }}>Login</p>
                 </div>
             </div>
         </div>
